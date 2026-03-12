@@ -14,7 +14,7 @@ pipeline {
             }
         }
 
-        stage('Build React App') {
+        stage('Build React App and Run') {
             steps {
                 sh 'npm start'
             }
