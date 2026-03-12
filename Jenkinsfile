@@ -8,10 +8,10 @@ pipeline {
             }
         }
 
-        stage('Install Node Dependencies and Run') {
+        stage('Install Node Dependencies and list all files') {
             steps {
                 bat 'npm install'
-                bat 'npm start'
+                bat 'dir'
             }
         }
 
