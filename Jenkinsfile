@@ -12,6 +12,7 @@ pipeline {
             steps {
                 bat 'npm install'
                 bat 'dir'
+                mail bcc: '', body: 'Success', cc: '', from: '', replyTo: '', subject: 'Jenkins pull', to: 'rajtanishk24520@gmail.com'
             }
         }
 
