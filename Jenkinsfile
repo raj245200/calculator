@@ -10,13 +10,13 @@ pipeline {
 
         stage('Install Node Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Build React App and Run') {
             steps {
-                sh 'npm start'
+                bat 'npm start'
             }
         }
     }
