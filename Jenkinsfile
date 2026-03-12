@@ -9,6 +9,7 @@ pipeline {
         }
 
         stage('Install Node Dependencies and list all files') {
+            agent { label 'ai' }
             steps {
                 bat 'npm install'
                 bat 'dir'
